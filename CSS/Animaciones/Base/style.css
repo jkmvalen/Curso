@@ -34,8 +34,21 @@ h1{
     border-radius: 50%;
     margin-bottom: 20px;
     cursor: pointer;
+/*Nombre de la animacion*/
+animation-name: animacion1;
+/*Tiempo de duracion*/
+animation-duration: 2s;
+/*Linea de tiempo de ejecucion / Velocidad*/
+animation-timing-function: cubic-bezier(.14,.73,.87,.11);
+/*Controlar el numero de repeticiones*/
+animation-iteration-count: infinite;
+/*Estado de la animacion*/
+animation-play-state:running;
+/*Direccion de animacion, es decir que flujo seguira la animacion*/
+animation-direction: alternate;
+/*Retraso de la animacion*/
+animation-delay: 2s;
 }
-
 /*Estilos de caja 1*/
 .caja1{
     display: flex;
@@ -103,7 +116,18 @@ h1{
 /* Animacion de caja 2*/
 @keyframes animacion2 {
     0%{
-
+      
+            transform: translate(200px, 0px);
+        }
+        33.3%{
+            transform: translate(-200px, 0px);
+        }
+        66.6%{
+            transform: translate(200px, 0px);
+        }
+        100%{
+            transform: translate(-200px, 0px);
+        }
     }
     100%{
 
